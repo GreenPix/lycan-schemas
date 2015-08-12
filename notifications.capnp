@@ -11,7 +11,7 @@ struct Notification {
       id @1 :UInt64;
     }
 
-    entityMessage :group {
+    entitySay :group {
       id @2 :UInt64;
       message @3 :Text;
     }

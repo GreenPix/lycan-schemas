@@ -30,6 +30,10 @@ struct Notification {
       id @9 :UInt64;
     }
 
+    response :group {
+      code @10 :ErrorCode;
+    }
+
 
 # TODO: Remove that part once we have UDP
     gameTick :group {
@@ -52,4 +56,9 @@ struct Entity {
   id @0 :UInt64;
   location @1 :Location;
   orientation @2 :Common.Direction;
+}
+
+enum ErrorCode {
+  success @0;
+  error @1;
 }
